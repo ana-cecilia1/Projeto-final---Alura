@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="cabecalho">
+        <h1> 
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="home.html" id="homeCor">Home</a>
+                <a class="cabecalho__menu__link" href="sobreMim.html">Sobre mim</a>
+                <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+            </nav>
+        </h1>     
+    </header>
+
+    <main class="formulario">
+        <form class="form" action="https://formsubmit.co/anacecilia.oa@gmail.com" method="POST">
+            <h2>Entre em contato comigo</h2>
+            <label for="nome">Nome:</label> 
+            <input type="text" name="name" id="nome" placeholder="Preencha seu nome" required>
+            
+            <label for="email">E-mail:</label> 
+            <input type="email" name="email" id="email" placeholder="seuemail@email.com.br" required>
+
+            <label for="textarea">Sua mensagem:</label>
+            <textarea name="message" placeholder="Sua mensagem..." id="textarea" cols="30" rows="10" ></textarea>
+            <button type="submit">Enviar</button>
+       </form>
+       <img class="img-contato" src="https://sdk.bitmoji.com/render/panel/20091002-99462650496_11-s5-v1.png?transparent=1&palette=1&scale=2" alt="Bitmoji da Ana Cecília em cima de um teclado de computador" width="400px" height="400px">
+    </main>
+
+    <footer class="rodape"> 
+        <a href="https://www.alura.com.br/"><img class="alura" src="img/alura.png" alt=""></a>
+        <a href="https://www.alura.com.br/"><img src="img/senac.png" alt=""></a>
+        <p class="rodape__texto">Desenvolvido por Ana Cecília no programa de Aceleração de carreiras.</p> 
+    </footer>
+</body>
+</html>

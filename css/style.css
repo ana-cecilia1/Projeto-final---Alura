@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap&family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #fd9012;
+    --cor-hover: #6e6e6e;
+
+    --fonte-primaria: 'Barriecito', cursive;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+    font-size: 1.5rem;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+
+}
+
+.cabecalho__menu__link:hover{
+    color:var(--cor-hover);
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+.apresentacao{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 50px;
+    font-family: var(--fonte-primaria);
+    margin-bottom: 100px;
+}
+.titulo-destaque{
+    color: var(--cor-terciaria);
+    font-size: 70px;
+    /* font-family: var(--fonte-primaria); */
+}
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction:initial;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    margin-top: 20px;
+}
+
+.apresentacao__links__navegacao:hover{
+    background-color:var(--cor-hover);
+    transition: 0.5s;
+    opacity: 0.7; 
+}
+
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+}
+.apresentacao__imagem{
+    max-width:300px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.imgIcon{
+   max-width: 30px;
+   max-height: 30px;
+}
+
+footer img{
+    max-width: 60px;
+    max-height: 60px; 
+}
+
+.alura{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+footer img:hover{
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+.rodape{
+    display: flex; 
+    justify-content: center; /*usa esse para arrumar texto meio*/ 
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 14px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    gap: 40px;
+   
+}
+
+.carrossel{
+    box-shadow: 2px 2px 4px white;
+    overflow: hidden;
+    height: 400px;
+    width: 400px;
+}
+
+.carrossel__div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+/* CSS página CONTATO */
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.form h2{
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria);
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.form label{
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 8px;
+}
+
+.form input {
+    height: 40px;
+}
+
+.form input, .form textarea{
+    background-color: transparent;
+    border: 1px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 24px;
+    color: var(--cor-secundaria);
+}
+
+.form input:focus, .form textarea:focus{
+    outline: 2px solid var(--cor-terciaria); 
+
+}
+
+.form button{
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    background-color: transparent;
+
+}
+
+.form button:hover{
+    background-color: var(--cor-hover); 
+}
+
+/* CSS imagem da pagina CONTATO */
+.img-contato{
+    display: flex;
+    max-width:500px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+
+
+

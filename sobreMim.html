@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <!-- <link rel="stylesheet" href="js/sobreMim.js"> -->
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header class="cabecalho">
+        <h1> 
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="home.html" id="homeCor">Home</a>
+                <a class="cabecalho__menu__link" href="sobreMim.html">Sobre mim</a>
+                <a class="cabecalho__menu__link" href="contato.html">Contato</a>
+            </nav>
+        </h1>     
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque"> Sobre mim </strong></h1>
+            <p class="apresentacao__conteudo__texto">
+                Atuo na área de tradução e interpretação do par linguístico Libras-Português.
+                Me aventurando no mundo incrível da técnologia, influenciada por um amigo surdo.
+            
+            </p>
+            <p class="apresentacao__conteudo__texto">
+                Atualmente participo de um programa de aceleração em carreiras de TI
+                oferecido pela instituição onde trabalho - Senac.</p>
+        </section>
+        <div class="carrossel">
+            <div class="carrossel__div" id="img"><img src="./img/perfil.png" alt="Foto da Ana Cecília sinalizando seu nome em Libras" width="400px" height="400px"></div>
+            <div class="carrossel__div" id="img"><img src="img/movimento surdo.jpg" alt="Foto de um auditório e um rapaz fazendo palestra em libras com uma intérprete traduzindo para o português" width="400px" height="400px"></div>
+            <div class="carrossel__div" id="img"><img src="img/palestra.jpg" alt="Palestra sobre a atuação do tradutor/intérprete" width="400px" height="400px"></div>
+            <div class="carrossel__div" id="img"><img src="img/podio.jpg" alt="Pódio do kahoot" width="400px" height="400px"></div>
+        </div>
+    </main>
+    <footer class="rodape"> 
+        <a href="https://www.alura.com.br/"><img class="alura" src="img/alura.png" alt=""></a>
+        <a href="https://www.alura.com.br/"><img src="img/senac.png" alt=""></a>
+        <p class="rodape__texto">Desenvolvido por Ana Cecília no programa de Aceleração de carreiras.</p> 
+    </footer>
+    
+    <script>
+        // carrossel imagens pagina sobre mim
+        var intervalo = 0;
+        var maxSlide = document.querySelectorAll('.carrossel__div').length -1;
+
+        acao();
+
+        function acao(){
+
+        let img = document.querySelectorAll('.carrossel__div img')
+
+        setInterval(function(){
+            
+            img[intervalo].style.display = 'none';
+            intervalo++;
+            if(intervalo > maxSlide){
+
+            intervalo = 0;
+            }
+
+            img[intervalo].style.display = 'block';
+
+        },3000)
+
+        }
+
+    </script>
+</body>
+</html>
